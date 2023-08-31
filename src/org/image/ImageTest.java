@@ -46,9 +46,7 @@ class ImageComponent extends JComponent {
 
 	private Image image;
 
-	public ImageComponent() {
-		//image = new ImageIcon("src\\images\\java.png").getImage();
-		
+	public ImageComponent() {		
 		try {
 			BufferedImage bfImage = ImageIO.read(new File("src\\images\\java.png"));
 			image = bfImage.getScaledInstance(100, 100, Image.SCALE_DEFAULT);
